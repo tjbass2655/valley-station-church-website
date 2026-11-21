@@ -1,0 +1,88 @@
+# Free, visual editor for Valley Station Church of God.
+# Once this repository is connected at https://app.pagescms.org,
+# authorized editors can add announcements, events, and sermons.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  rename: safe
+  categories: [image]
+content:
+  - name: announcements
+    label: Weekly Announcements
+    type: file
+    path: content/announcements.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Headline
+        type: string
+        required: true
+      - name: date
+        label: Announcement Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: message
+        label: Announcement Details
+        type: text
+      - name: image
+        label: Picture (optional)
+        type: image
+      - name: important
+        label: Highlight this announcement
+        type: boolean
+  - name: events
+    label: Upcoming Events
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Event Name
+        type: string
+        required: true
+      - name: date
+        label: Event Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: time
+        label: Time (example 2:00 PM)
+        type: string
+      - name: place
+        label: Location
+        type: string
+      - name: details
+        label: Event Details
+        type: text
+      - name: image
+        label: Event Picture (optional)
+        type: image
+  - name: sermons
+    label: Sermons and Messages
+    type: file
+    path: content/sermons.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Sermon Title
+        type: string
+        required: true
+      - name: date
+        label: Sermon Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: scripture
+        label: Scripture Reference
+        type: string
+      - name: summary
+        label: Sermon Description
+        type: text
+      - name: link
+        label: Video or Audio Link (optional)
+        type: string
