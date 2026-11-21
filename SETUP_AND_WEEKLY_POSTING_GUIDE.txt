@@ -1,0 +1,85 @@
+VALLEY STATION CHURCH OF GOD
+NEW WEBSITE WITH EASY WEEKLY UPDATES
+=======================================
+
+IMPORTANT: This version replaces the earlier drag-and-drop-only website
+package. Use this new ZIP file for initial setup. The site is NOT online yet.
+
+WHAT YOU CAN CHANGE WITHOUT CODE
+- Weekly Announcements: add headlines, dates, details, pictures
+- Upcoming Events: add dates, times, places, details, pictures
+- Sermons and Messages: add title, scripture, summary and link to video/audio
+- Old event dates automatically disappear from the public upcoming-events area
+
+ONE-TIME FREE SETUP (A COMPUTER IS EASIEST)
+
+A. CREATE THE SOURCE REPOSITORY
+1. Create or sign in to a free GitHub account: https://github.com/
+2. Open https://github.com/new and create a repository named
+   valley-station-church-website. It can be a public repository, since the
+   files contain public church website content only.
+3. UNZIP the supplied website ZIP onto your computer.
+4. On GitHub, in your new repository, choose Add file > Upload files.
+   Drag the CONTENTS OF THE UNZIPPED FOLDER into the upload area.
+   Keep the folders named content/ and assets/ in their existing locations.
+   The index.html and .pages.yml MUST be at the TOP LEVEL of the repository.
+   If hidden files are not visible on your computer, .pages.yml starts with a
+   dot (on Mac press Command+Shift+Period to show hidden files).
+5. Scroll down and Commit changes. Confirm you see .pages.yml,
+   index.html, styles.css, updates.js, and content/ in the repo.
+
+B. CONNECT FREE HOSTING WITH AUTOMATIC UPDATES
+6. Create or sign in to Cloudflare: https://dash.cloudflare.com/
+7. Workers & Pages > Create application > Pages > Connect to Git.
+   Choose the GitHub repository you just created.
+8. Select the main branch. No preset framework is needed. Set:
+   Build command: exit 0
+   Build output directory: .
+9. Deploy. Cloudflare gives you a free *.pages.dev web address.
+   Connecting the church's own existing custom domain is optional; check domain
+   ownership and any email DNS records before changing nameservers.
+
+C. ENABLE YOUR SIMPLE WEEKLY EDITOR
+10. Go to https://app.pagescms.org/ and sign in with GitHub.
+11. Authorize the Pages CMS GitHub app for your church website repository.
+12. Open valley-station-church-website in Pages CMS. The configuration file
+    .pages.yml is already included. The editor displays three sections:
+    Weekly Announcements, Upcoming Events, Sermons and Messages.
+
+EACH WEEK (PHONE, TABLET OR COMPUTER)
+1. Visit https://app.pagescms.org/ and sign in.
+2. Open the church website repository.
+3. Select Weekly Announcements, Upcoming Events, or Sermons and Messages.
+4. Add a new item, fill in the simple boxes, and save.
+5. Cloudflare notices the saved update in GitHub and automatically publishes
+   it to your church website, typically soon after the GitHub commit.
+6. Remove or update old weekly announcements as needed. Events disappear from
+   public "Upcoming Events" automatically after their dates pass, but remain
+   in the editor until you delete them.
+
+IMPORTANT CAUTIONS
+- The editor is accessed at app.pagescms.org. Visitors do not edit the site.
+- Website hosting, GitHub source storage and Pages CMS offer free options.
+  Domain registration and payment processing may still have separate costs.
+- You must connect GitHub to Cloudflare Pages using "Connect to Git".
+  Do NOT use the earlier "Direct Upload" path for this version, since direct
+  upload does not automatically publish your editor's changes.
+- Announcements, events and sermons are intentionally EMPTY initially.
+  No made-up church events or sermon dates are published.
+- The single-file HTML preview includes sample posts for layout demonstration
+  ONLY. The samples are NOT in the deployable website package.
+- Church service times and the publicly listed email address must be checked
+  for accuracy before publishing.
+- Test all Clover donation links and ensure the church controls its domain.
+- NEVER upload passwords, member directories or private prayer requests to
+  this GitHub website repository. These website files are public.
+- Photos uploaded into the editor become visible on the church website; ask
+  people for appropriate consent before posting their images.
+
+If you already launched an earlier Direct Upload project, create a NEW
+Cloudflare Pages project connected to GitHub for automated updates.
+
+SUPPORT DOCUMENTATION
+https://pagescms.org/docs/quick-start/
+https://developers.cloudflare.com/pages/configuration/git-integration/
+https://developers.cloudflare.com/pages/framework-guides/deploy-anything/
