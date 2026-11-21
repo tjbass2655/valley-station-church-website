@@ -53,3 +53,54 @@
 .footer-bottom span a{display:inline}
 @media(max-width:900px){.sermons-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.updates-grid{grid-template-columns:1fr}.sermon-header{align-items:start;flex-direction:column;gap:7px}.sermon-panel{padding:27px 22px}.sermons-list{grid-template-columns:1fr}}
+
+
+/* 2026 professional refresh: typography, clarity, and livestream invitation */
+:root{--navy:#0f293a;--navy-dark:#0a1f30;--gold:#e0b46d;--pine:#245d58}
+body{background:#fffdf9}
+.header{box-shadow:0 4px 24px rgba(13,36,47,.045)}
+.nav{min-height:94px}
+.brand-logo{filter:drop-shadow(0 2px 3px rgba(7,33,46,.13))}
+.nav-links{gap:20px}
+.nav-links .nav-watch{font-weight:800!important;color:#174e50!important;display:inline-flex;align-items:center;gap:8px}
+.nav-watch span,.play-icon{font-size:11px;line-height:1;display:inline-grid;place-items:center}
+.top-dot,.caption-dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:#e2bd7d;margin-right:6px;vertical-align:1px}
+.top-watch{color:#efd7a9;font-weight:750;text-decoration:none;white-space:nowrap}
+.top-watch:hover{text-decoration:underline}
+.hero{min-height:600px}
+.hero-inner{min-height:600px}
+.hero:before{background:radial-gradient(circle at 81% 34%,rgba(112,165,150,.31) 0,transparent 37%),linear-gradient(115deg,#081d2e 10%,#184155 100%)}
+.hero h1{font-size:clamp(46px,6.1vw,80px);letter-spacing:-.055em}
+.hero h1 em{color:#f4d5a2}
+.hero-tags{margin-top:44px}
+.hero-service-badge{position:absolute;top:14%;left:-1%;z-index:1;background:rgba(255,255,255,.96);padding:14px 19px;min-width:206px;border-radius:10px;box-shadow:0 16px 35px rgba(0,0,0,.2);display:grid;gap:2px;color:#183947}
+.hero-service-badge span{color:#9c713d;font-size:9px;font-weight:800;letter-spacing:.17em}
+.hero-service-badge strong{font:20px Georgia,serif}
+.hero-service-badge small{font-size:11px;color:#63787b}
+.hero-art-frame{box-shadow:0 28px 90px rgba(0,0,0,.27),inset 0 0 0 1px rgba(255,255,255,.1)}
+.welcome-band{background:#f9f5eb}.welcome-actions{display:flex;gap:27px;flex-wrap:wrap}
+.welcome-band a{white-space:nowrap}
+.btn{border-radius:7px}
+.btn:hover{transform:translateY(-2px)}
+.ministry,.updates-panel,.sermon-item,.time-card{box-shadow:0 12px 35px rgba(14,53,53,.035)}
+.livestream-feature{background:#102f43;overflow:hidden;position:relative;color:white}
+.livestream-feature:before{content:'';position:absolute;top:-240px;right:-250px;width:750px;height:750px;border:1px solid rgba(255,255,255,.09);border-radius:50%;box-shadow:0 0 0 110px rgba(255,255,255,.02),0 0 0 210px rgba(255,255,255,.015)}
+.livestream-feature-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center;min-height:438px;padding:62px 0;position:relative;z-index:1}
+.livestream-feature h2{font-size:clamp(36px,4.3vw,58px);color:#fff;margin:13px 0 20px}
+.livestream-feature h2 em{color:#f0c992;font-weight:400;font-style:normal}
+.livestream-feature p{color:#d0dedf;font-size:16px;max-width:540px}
+.livestream-feature-actions{display:flex;align-items:center;flex-wrap:wrap;gap:18px;margin-top:30px}
+.livestream-feature-actions>span{font-size:12px;color:#c0d4d9}
+.livestream-feature-art{padding:8px 0 0;max-width:470px;justify-self:end;width:100%}
+.watch-art-screen{aspect-ratio:16/9;border-radius:17px;background:linear-gradient(150deg,#325a61,#092335);border:7px solid rgba(232,246,242,.15);box-shadow:0 25px 65px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;overflow:hidden}
+.watch-art-screen:after{content:'';position:absolute;inset:15px;border:1px solid rgba(255,255,255,.1);border-radius:9px;pointer-events:none}
+.watch-art-mark{font:70px Georgia,serif;line-height:1;color:rgba(239,210,162,.35)}
+.watch-art-play{position:absolute;left:calc(50% - 31px);top:calc(50% - 31px);border-radius:50%;height:62px;width:62px;display:grid;place-items:center;background:var(--gold);color:#142a38;box-shadow:0 9px 24px rgba(0,0,0,.3);padding-left:4px;font-size:18px}
+.watch-art-screen p{font-size:12px;line-height:1.5;letter-spacing:.18em;color:#e1f0f1;text-align:center;margin:27px 0 0}
+.watch-art-screen strong{font-weight:800}
+.watch-art-caption{display:flex;align-items:center;justify-content:center;gap:9px;color:#d8e7e8;font-size:12px;margin-top:19px}
+.section-visit{background:#f8f5ed}
+@media(max-width:1080px){.nav-links{gap:12px}.nav-links>a:not(.btn){font-size:12px}}
+@media(max-width:920px){.nav-links{gap:10px}.nav-links>a:not(.btn){font-size:11px}.nav-links .btn{padding-left:15px;padding-right:15px}.hero-service-badge{left:0;top:8%}}
+@media(max-width:760px){.top-watch{font-size:11px}.nav{min-height:77px}.nav-links .nav-watch{padding:13px 7px!important;border-bottom:1px solid #edf1f0}.hero-service-badge{left:3%;top:6%;min-width:0;padding:9px 12px}.hero-service-badge strong{font-size:15px}.hero-service-badge small{font-size:9px}.hero-service-badge span{font-size:8px}.welcome-actions{gap:15px}.livestream-feature-inner{grid-template-columns:1fr;gap:25px;padding:66px 0}.livestream-feature-art{justify-self:start;max-width:600px;width:100%}}
+@media(max-width:480px){.hero-service-badge{top:6%;left:1%}.top-note .container{justify-content:space-between;align-items:center}.top-note .container>span{max-width:210px;line-height:1.25}.hero h1{font-size:44px}.livestream-feature-actions{align-items:start;flex-direction:column}.watch-art-screen{border-width:5px}}
