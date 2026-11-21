@@ -86,3 +86,21 @@ content:
       - name: link
         label: Video or Audio Link (optional)
         type: string
+          - name: livestream
+    label: Watch Live (Vimeo)
+    type: file
+    path: content/livestream.json
+    format: json
+    fields:
+      - name: vimeo_url
+        label: Vimeo Live Service Link
+        type: string
+        description: Paste your church's Vimeo live service link here.
+      - name: embed_url
+        label: Vimeo Embed Link or Embed Code (optional)
+        type: text
+        description: Paste the Vimeo embed code here to show services directly on your website.
+      - name: service_note
+        label: Message for Online Viewers
+        type: text
+        description: Enter a welcome message for people watching online.
