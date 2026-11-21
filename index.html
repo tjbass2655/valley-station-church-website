@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="events-slideshow.css">
   <style>@media (min-width: 1001px) {.schedule {grid-template-columns: repeat(3, minmax(0, 1fr));}}</style>
   <title>Valley Station Church of God | Louisville, Kentucky</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Church","name":"Valley Station Church of God","telephone":"+1-502-935-7051","email":"vs12491@gmail.com","address":{"@type":"PostalAddress","streetAddress":"12491 Old Dixie Highway","addressLocality":"Louisville","addressRegion":"KY","postalCode":"40272","addressCountry":"US"}}</script>
@@ -63,6 +64,23 @@
         <div id="events-list" class="updates-list" aria-live="polite"><p class="updates-loading">Loading events…</p></div>
       </section>
     </div>
+    <!-- Monthly slide gallery appears directly below Upcoming Events -->
+    <section id="event-showcase" class="event-showcase" aria-labelledby="event-slideshow-heading">
+      <div class="event-showcase-heading">
+        <div><span class="eyebrow">Flyers &amp; Special Announcements</span><h3 id="event-slideshow-heading">Monthly Church Event Slideshow</h3><p>Use the arrows to view each announcement. Tap a flyer for a larger view.</p></div>
+        <span class="event-showcase-chip" id="event-slide-month">Church Events</span>
+      </div>
+      <div class="event-showcase-stage" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Monthly church event flyers">
+        <button type="button" class="event-showcase-arrow" id="event-slide-prev" aria-label="Previous event slide" disabled>‹</button>
+        <figure class="event-showcase-image"><img id="event-slide-image" alt="Church event flyer" src="" loading="lazy" decoding="async"></figure>
+        <button type="button" class="event-showcase-arrow" id="event-slide-next" aria-label="Next event slide" disabled>›</button>
+      </div>
+      <div class="event-showcase-info">
+        <div class="event-showcase-title"><h4 id="event-slide-title">Loading events…</h4><p id="event-slide-details">Monthly church announcements and activities.</p></div>
+        <div class="event-showcase-tools"><span class="event-showcase-count" id="event-slide-count" aria-live="polite">1 of 1</span><a id="event-slide-open" class="event-flyer-link" target="_blank" rel="noopener noreferrer" href="#" hidden>View full-size flyer ↗</a></div>
+      </div>
+      <div class="event-showcase-dots" id="event-slide-dots" aria-label="Choose an event slide"></div>
+    </section>
     <section class="sermon-panel" aria-labelledby="sermons-heading">
       <div class="sermon-header"><div><span class="eyebrow">Encouragement From the Word</span><h3 id="sermons-heading">Recent Sermons &amp; Messages</h3></div><p>Listen, watch, and grow in faith through biblical teaching.</p></div>
       <div id="sermons-list" class="sermons-list" aria-live="polite"><p class="updates-loading">Loading sermons…</p></div>
@@ -86,4 +104,5 @@
 <footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="#top"><img src="assets/church-of-god-logo.png" class="brand-logo" alt="Church of God emblem" width="51" height="57"><span><span class="brand-name">VALLEY STATION<br>CHURCH OF GOD</span><span class="brand-sub">Louisville, Kentucky</span></span></a><p>Loving God. Loving people. Investing in our community. We hope to worship with you soon.</p></div><div><h4>Explore</h4><a href="#welcome">About Our Church</a><a href="#visit">Service Times</a><a href="#news">News &amp; Events</a><a href="#ministries">Ministries</a><a href="#give">Give Online</a><a href="/watch/">Watch Live &amp; Sermons</a></div><div><h4>Visit & Connect</h4><a href="https://www.google.com/maps/search/?api=1&amp;query=12491+Old+Dixie+Highway+Louisville+KY+40272" target="_blank" rel="noopener noreferrer">12491 Old Dixie Highway<br>Louisville, KY 40272</a><a href="tel:+15029357051">(502) 935-7051</a><a href="mailto:vs12491@gmail.com">vs12491@gmail.com</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Valley Station Church of God. All rights reserved.</span><span><a href="https://app.pagescms.org/" target="_blank" rel="noopener noreferrer" title="Authorized church editors only">Staff updates</a> &nbsp; · &nbsp; <a href="#top">Back to top ↑</a></span></div></div></footer>
 <script src="site.js" defer></script>
 <script src="updates.js" defer></script>
+<script src="events-slideshow.js" defer></script>
 </body></html>

@@ -1,0 +1,28 @@
+/* Monthly Events slideshow: independent from the existing styles.css */
+.event-showcase{margin-top:34px;overflow:hidden;border:1px solid #e4e9e6;border-radius:18px;background:#fbfcfa;box-shadow:0 10px 36px rgba(17,43,64,.06)}
+.event-showcase-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 29px 22px;flex-wrap:wrap}
+.event-showcase-heading .eyebrow{font-size:11px}
+.event-showcase-heading h3{font:clamp(22px,2.5vw,31px)/1.25 Georgia,serif;color:#153b49;margin:5px 0 6px}
+.event-showcase-heading p{font-size:13px;margin:0;color:#61757d}
+.event-showcase-chip{border-radius:999px;background:#e8f2ec;color:#27644f;font-size:12px;font-weight:800;padding:10px 15px;white-space:nowrap}
+.event-showcase-stage{position:relative;display:grid;grid-template-columns:64px minmax(0,1fr) 64px;align-items:center;gap:6px;background:linear-gradient(135deg,#0f2639,#173d46);padding:18px 16px}
+.event-showcase-image{min-width:0;display:flex;align-items:center;justify-content:center;aspect-ratio:16/9;margin:0}
+.event-showcase-image img{height:100%;width:100%;max-height:620px;object-fit:contain;object-position:center;border-radius:7px;box-shadow:0 4px 15px rgba(0,0,0,.22);background:#132c39}
+.event-showcase-arrow{width:50px;height:50px;justify-self:center;background:#fff;border:0;color:#143d46;display:grid;place-items:center;border-radius:50%;font-size:36px;line-height:1;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.22);transition:background .15s,transform .15s}
+.event-showcase-arrow:not(:disabled):hover{background:#f8deb3;transform:scale(1.06)}
+.event-showcase-arrow:disabled{opacity:.4;cursor:not-allowed}
+.event-showcase-arrow:focus-visible,.event-showcase-dots button:focus-visible,.event-flyer-link:focus-visible{outline:3px solid #e6b56f;outline-offset:3px}
+.event-showcase-info{padding:21px 28px 18px;display:flex;align-items:center;justify-content:space-between;gap:19px;flex-wrap:wrap}
+.event-showcase-title{min-width:0;flex:1}
+.event-showcase-title h4{font:21px/1.3 Georgia,serif;color:#153b49;margin:1px 0 7px}
+.event-showcase-title p{margin:0;font-size:13px;line-height:1.55;color:#65767c}
+.event-showcase-tools{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.event-showcase-count{font-size:12px;font-weight:800;letter-spacing:.06em;color:#60747b;white-space:nowrap}
+.event-flyer-link{font-size:13px;font-weight:800;color:#1e615a;text-decoration:underline;text-underline-offset:4px}
+.event-showcase-dots{padding:0 20px 22px;display:flex;gap:7px;justify-content:center;align-items:center;flex-wrap:wrap}
+.event-showcase-dots button{border:0;width:12px;height:12px;border-radius:99px;background:#c7d1ce;cursor:pointer;padding:0}
+.event-showcase-dots button[aria-current="true"]{background:#28705e;width:29px}
+.event-showcase-error{margin:0;padding:35px 20px;font-size:14px;text-align:center;color:#e9eef0}
+@media(max-width:760px){.event-showcase-heading{padding:21px 18px}.event-showcase-stage{grid-template-columns:43px minmax(0,1fr) 43px;gap:2px;padding:12px 4px}.event-showcase-arrow{height:40px;width:40px;font-size:27px}.event-showcase-info{padding:19px 18px 13px;align-items:flex-start}.event-showcase-tools{width:100%;justify-content:space-between}.event-showcase-title h4{font-size:19px}}
+@media(max-width:400px){.event-showcase-stage{grid-template-columns:37px minmax(0,1fr) 37px;padding:8px 1px}.event-showcase-arrow{height:34px;width:34px;font-size:23px}.event-showcase-heading h3{font-size:21px}}
+@media(prefers-reduced-motion:reduce){.event-showcase-arrow{transition:none}}
