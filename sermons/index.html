@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c3f">
+  <meta name="description" content="Explore past sermons and messages from Valley Station Church of God. Find Bible teaching and Vimeo recordings by date, title and scripture.">
+  <title>Sermon Archive | Valley Station Church of God</title>
+  <link rel="icon" type="image/png" href="../assets/icon-192.png">
+  <link rel="stylesheet" href="archive.css">
+</head>
+<body>
+  <a href="#sermon-search" class="skip-link">Skip to sermon search</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../" class="brand" aria-label="Valley Station Church of God home">
+        <img src="../assets/church-of-god-logo.png" alt="Church of God emblem" width="46" height="54">
+        <span>VALLEY STATION<br><strong>CHURCH OF GOD</strong></span>
+      </a>
+      <nav aria-label="Archive navigation">
+        <a href="../#news">Recent sermons</a>
+        <a href="../watch/">Watch Live</a>
+        <a href="../" class="nav-home">Church home <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="kicker"><span class="kicker-mark" aria-hidden="true">✦</span> ENCOURAGEMENT FROM GOD'S WORD</div>
+        <h1>Messages to strengthen<br><em>your faith.</em></h1>
+        <p>Welcome to our sermon archive. Browse messages by date, search for a topic or scripture, and follow the recording link to watch or listen at any time.</p>
+        <a class="hero-link" href="../#news">← Back to the six most recent messages</a>
+      </div>
+    </section>
+    <section class="archive-main container" aria-labelledby="archive-heading">
+      <div class="intro">
+        <div><span class="eyebrow">GROW IN THE WORD</span><h2 id="archive-heading">All Sermons &amp; Messages</h2></div>
+        <p id="library-total" class="archive-count" aria-live="polite">Loading sermon library…</p>
+      </div>
+      <div class="search-panel">
+        <div class="form-field search-field">
+          <label for="sermon-search">Search sermons</label>
+          <input id="sermon-search" type="search" placeholder="Search title, scripture or topic" autocomplete="off">
+        </div>
+        <div class="form-field year-field">
+          <label for="year-filter">Year</label>
+          <select id="year-filter"><option value="all">All years</option></select>
+        </div>
+        <div class="form-field sort-field">
+          <label for="sort-filter">Order</label>
+          <select id="sort-filter"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select>
+        </div>
+      </div>
+      <p id="result-count" class="result-count" role="status" aria-live="polite">Loading sermons…</p>
+      <div id="sermon-results" class="sermon-results" aria-live="off">
+        <div class="placeholder">Getting messages ready…</div>
+      </div>
+      <div class="load-row"><button type="button" id="load-more" hidden>Show more sermons ↓</button></div>
+    </section>
+    <section class="invitation"><div class="container invitation-inner"><div><span class="eyebrow">JOIN US</span><h2>There's a place for you here.</h2><p>We'd love to welcome you at Valley Station Church of God in Louisville, Kentucky.</p></div><a href="../#visit" class="invitation-btn">Plan Your Visit →</a></div></section>
+  </main>
+  <footer><div class="container footer-inner"><p><strong>Valley Station Church of God</strong><br>12491 Old Dixie Highway, Louisville, KY 40272</p><p><a href="../">Home</a> · <a href="../watch/">Watch Live</a> · <a href="https://app.pagescms.org/" rel="noopener noreferrer" target="_blank">Staff Updates</a></p></div></footer>
+  <script src="archive.js" defer></script>
+</body>
+</html>

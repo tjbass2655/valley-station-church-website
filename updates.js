@@ -89,7 +89,7 @@
   }
   function renderSermons(items) {
     const target=[];
-    [...items].filter(x=>x&&x.title).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,3).forEach(item=>{
+    [...items].filter(x=>x&&x.title).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,6).forEach(item=>{
       const card=elem('article','sermon-item');
       meta(card,niceDate(item.date));
       card.append(elem('h4','',item.title));
@@ -101,6 +101,17 @@
     });
     if(!target.length) target.push(emptyState('Sermon titles, scriptures and video links will appear here.'));
     setContent('sermons-list',target);
+    // Link to the full collection, without changing or replacing the homepage.
+    const sermonsList = byId('sermons-list');
+    if (sermonsList && !byId('sermons-archive-link')) {
+      const actions = elem('div', 'sermon-archive-actions');
+      actions.style.cssText = 'display:flex;justify-content:center;margin-top:24px';
+      const archiveLink = elem('a', 'btn', 'View All Sermons →');
+      archiveLink.id = 'sermons-archive-link';
+      archiveLink.href = '/sermons/';
+      actions.append(archiveLink);
+      sermonsList.insertAdjacentElement('afterend', actions);
+    }
   }
   async function load(name, renderer) {
     if (sample && Array.isArray(sample[name])) {renderer(sample[name]);return;}
