@@ -1,25 +1,26 @@
-VALLEY STATION CHURCH OF GOD - SLIDESHOW-ONLY UPDATE
+VALLEY STATION CHURCH OF GOD - CHRISTMAS CANTATA SLIDESHOW UPDATE
 
-Adds exactly 2 pictures to the existing Monthly Event Slideshow:
-1. Men's Fellowship Breakfast & Sunday Night Recovery Service Postponed
-2. Tithes & Offerings: Scan to Give
-The 2027 THERE IS STILL MORE theme banner remains last.
+Adds the Christmas Cantata flyer to the Monthly Event Slideshow:
+"Let Earth Receive Her King"
+Sunday, December 13, 2026 at 10:30 AM.
 
-FILES THIS UPDATE REPLACES/ADDS:
-  content/event-slides.json            (replaces slideshow listing)
-  assets/event-slides/mens-fellowship-recovery-postponed.jpg
-  assets/event-slides/tithes-and-offerings-giving.jpg
+The flyer is inserted AFTER the December 7 Ladies Christmas Party and BEFORE the December 19 Senior Adult Christmas Dinner. The 2027 theme banner stays at the end.
 
-NO index.html, .pages.yml, JS, CSS, service links, or other content is included.
+THIS ZIP CONTAINS ONLY:
+- assets/event-slides/christmas-cantata-let-earth-receive-her-king.jpg (new picture)
+- content/event-slides.json (slideshow listing, now 11 slides)
 
-TO PUBLISH:
-1. Extract this ZIP on your Windows computer.
-2. Open https://github.com/tjbass2655/valley-station-church-website
-3. Click Add file > Upload files, and drag the content and assets folders from the extracted package.
-4. Check that GitHub preserves each folder name (content/ and assets/event-slides/).
-5. Click Commit changes on the main branch.
-6. Cloudflare should publish the slideshow update automatically. Check https://myvscog.org/#news and use the arrows to find the new slides.
+No index.html, livestreams, service times, giving links, styles, scripts, or other pages are overwritten.
 
-PLEASE READ: This content/event-slides.json was prepared from the most recent slideshow version we created, containing 8 original slides. If you have added more slideshow entries through Pages CMS since installing that version, do NOT overwrite the newer event-slides.json with this copy, since that would erase those newer entries. Instead, add the two supplied JPGs through Pages CMS > Monthly Event Slideshow > Add an item, leaving the final-slide switch OFF for both. The 2027 banner remains the final slide.
+TO ADD TO YOUR WEBSITE:
+1. Download and extract the ZIP.
+2. Go to https://github.com/tjbass2655/valley-station-church-website
+3. Click Add file > Upload files.
+4. Drag the two extracted FOLDERS, assets and content, into GitHub. Make sure GitHub preserves the paths shown above.
+5. Click Commit changes on main.
+6. Cloudflare should automatically publish the new slideshow.
+7. Check https://myvscog.org/#news and advance using the right arrow to the December 13 slide.
 
-Your live website isn't changed until you commit these files to GitHub or save them through Pages CMS.
+CAUTION: The included content/event-slides.json is based on the last 10-slide package we prepared, not a live reading of your GitHub repository. If you have added or reordered slides in Pages CMS or GitHub since that version, uploading this JSON would overwrite those newer slide changes. In that case, instead use Pages CMS > Monthly Event Slideshow > Add an item and upload the included JPG, placing it after the December 7 slide and before December 19, then Save. Leave 'Keep this as the final slide' OFF.
+
+This ZIP does not publish anything automatically until you upload/commit the changes.
