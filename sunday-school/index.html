@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c3f">
+  <meta name="description" content="Watch Sunday School lessons and previous Sunday School recordings from Valley Station Church of God in Louisville, Kentucky.">
+  <title>Sunday School Archives | Valley Station Church of God</title>
+  <link rel="icon" type="image/png" href="../assets/icon-192.png">
+  <style>
+    :root { color-scheme: light; --navy:#102c3f; --blue:#173f55; --gold:#d4ac62; --cream:#f5f3ef; }
+    * { box-sizing:border-box; }
+    body { margin:0; font: 17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; color:#22343e; background:var(--cream); }
+    a { color:inherit; }
+    .container { width:min(1100px,calc(100% - 36px)); margin:auto; }
+    .skip { position:absolute; top:-100px; left:10px; padding:10px; background:white; z-index:5; }
+    .skip:focus { top:10px; }
+    header { background:var(--navy); color:white; }
+    .header { min-height:92px; display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; padding:14px 0; }
+    .brand { display:flex; align-items:center; gap:14px; text-decoration:none; font-weight:650; letter-spacing:.065em; line-height:1.25; font-size:14px; }
+    .brand img { width:46px; height:54px; object-fit:contain; }
+    nav { display:flex; gap:22px; flex-wrap:wrap; font-size:15px; }
+    nav a { text-decoration:none; }
+    nav a:hover, nav a:focus-visible { text-decoration:underline; }
+    .hero { background:linear-gradient(125deg,#102c3f,#1e5266); color:white; padding:64px 0 74px; }
+    .eyebrow { font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.16em; color:var(--gold); }
+    h1 { margin:12px 0 18px; font-size:clamp(35px,5.6vw,62px); line-height:1.12; letter-spacing:-.035em; }
+    .hero p { margin:0; max-width:730px; font-size:19px; color:#e5edf0; }
+    main .content { padding:46px 0 76px; }
+    h2 { color:var(--navy); font-size:clamp(25px,3vw,36px); line-height:1.25; margin:0 0 12px; }
+    .lead { margin:0 0 25px; max-width:850px; }
+    .player-shell { background:white; border-radius:16px; overflow:hidden; box-shadow:0 14px 38px rgba(11,39,54,.12); border:1px solid #dde5e6; }
+    .player { padding:56.25% 0 0; position:relative; background:#0b1b27; }
+    .player iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .note { padding:19px 24px; margin:0; font-size:15px; color:#3c5360; }
+    .links { display:flex; gap:13px; flex-wrap:wrap; margin-top:30px; }
+    .button { display:inline-block; padding:12px 20px; border-radius:7px; text-decoration:none; background:var(--navy); color:white; font-weight:650; }
+    .button.secondary { background:white; border:1px solid #b9c9d0; color:var(--navy); }
+    footer { background:var(--navy); color:#dfebee; padding:30px 0; font-size:14px; }
+    footer .container { display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+    footer p { margin:0; }
+    @media(max-width:600px) { .hero {padding:42px 0 50px;} .header {align-items:flex-start;} nav {gap:13px;} .content {padding-top:32px;} }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#sunday-school-player">Skip to Sunday School player</a>
+  <header>
+    <div class="container header">
+      <a class="brand" href="../" aria-label="Valley Station Church of God home">
+        <img src="../assets/church-of-god-logo.png" alt="Church of God emblem" width="46" height="54">
+        <span>VALLEY STATION<br><strong>CHURCH OF GOD</strong></span>
+      </a>
+      <nav aria-label="Sunday School archive navigation">
+        <a href="../">Home</a>
+        <a href="../sermons/">Sermon Archives</a>
+        <a href="../watch/">Watch Live</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Growing Together in God's Word</span>
+        <h1>Sunday School Archives</h1>
+        <p>Missed a lesson? Join us in studying God's Word. Watch our latest Sunday School recording and browse lessons available in our Vimeo playlist.</p>
+      </div>
+    </section>
+    <section class="content container" aria-labelledby="recordings-heading">
+      <h2 id="recordings-heading">Watch Sunday School Lessons</h2>
+      <p class="lead">Choose a lesson from the player playlist to watch at your convenience. When Vimeo publishes new recordings for this recurring event, they can appear here automatically.</p>
+      <div class="player-shell" id="sunday-school-player">
+        <div class="player">
+          <iframe src="https://vimeo.com/event/6371394/embed/interaction" title="Valley Station Church of God Sunday School recordings" allow="autoplay; fullscreen; picture-in-picture; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <p class="note">The available recordings are managed by Vimeo. For the latest video and playlist to appear, enable <strong>Show latest recording</strong> and <strong>Playlist</strong> in the Sunday School event's Vimeo player settings.</p>
+      </div>
+      <div class="links">
+        <a class="button" href="../sermons/">Morning Worship Sermons</a>
+        <a class="button secondary" href="../watch/">Watch Live</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p><strong>Valley Station Church of God</strong><br>12491 Old Dixie Highway, Louisville, KY 40272</p><p><a href="../">Church Home</a></p></div></footer>
+</body>
+</html>
