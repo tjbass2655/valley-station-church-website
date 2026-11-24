@@ -1,26 +1,29 @@
-VALLEY STATION CHURCH OF GOD - CHRISTMAS CANTATA SLIDESHOW UPDATE
+VALLEY STATION CHURCH OF GOD - REPAIR THREE BLACK SLIDES
 
-Adds the Christmas Cantata flyer to the Monthly Event Slideshow:
-"Let Earth Receive Her King"
-Sunday, December 13, 2026 at 10:30 AM.
+This ZIP contains ONLY three slideshow image files, with their EXACT expected names:
+  assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png
+  assets/event-slides/senior-adult-christmas-dinner-and-signup-nov24.png
+  assets/event-slides/childrens-christmas-program-dec20.png
 
-The flyer is inserted AFTER the December 7 Ladies Christmas Party and BEFORE the December 19 Senior Adult Christmas Dinner. The 2027 theme banner stays at the end.
+It does NOT include or change your event-slides.json, index.html, CSS, JavaScript, announcements, services, Vimeo links, sermons, or the 2027 theme banner.
+The Senior Adult flyer and the separate sign-up graphic have been combined into one slide image.
 
-THIS ZIP CONTAINS ONLY:
-- assets/event-slides/christmas-cantata-let-earth-receive-her-king.jpg (new picture)
-- content/event-slides.json (slideshow listing, now 11 slides)
+HOW TO INSTALL:
+1. Download and extract this ZIP on your computer.
+2. Open https://github.com/tjbass2655/valley-station-church-website
+3. From the repository MAIN page choose Add file -> Upload files.
+4. Drag the extracted "assets" folder into the upload area (not the ZIP itself).
+5. BEFORE COMMITTING: Confirm GitHub shows paths beginning with assets/event-slides/
+   (not assets/assets/event-slides/ or only a PNG at the root).
+6. Commit changes to the main branch.
+7. Check https://myvscog.org/#news and press Ctrl+F5 to hard refresh.
 
-No index.html, livestreams, service times, giving links, styles, scripts, or other pages are overwritten.
+TROUBLESHOOTING:
+Open each direct URL to check the picture file:
+https://myvscog.org/assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png
+https://myvscog.org/assets/event-slides/senior-adult-christmas-dinner-and-signup-nov24.png
+https://myvscog.org/assets/event-slides/childrens-christmas-program-dec20.png
+If any URL returns 404 or a black/missing image, its GitHub file is in the wrong folder or not deployed yet.
+If all three images load correctly but the slideshow is still black, try Ctrl+F5 or check the slideshow JSON for a different image path.
 
-TO ADD TO YOUR WEBSITE:
-1. Download and extract the ZIP.
-2. Go to https://github.com/tjbass2655/valley-station-church-website
-3. Click Add file > Upload files.
-4. Drag the two extracted FOLDERS, assets and content, into GitHub. Make sure GitHub preserves the paths shown above.
-5. Click Commit changes on main.
-6. Cloudflare should automatically publish the new slideshow.
-7. Check https://myvscog.org/#news and advance using the right arrow to the December 13 slide.
-
-CAUTION: The included content/event-slides.json is based on the last 10-slide package we prepared, not a live reading of your GitHub repository. If you have added or reordered slides in Pages CMS or GitHub since that version, uploading this JSON would overwrite those newer slide changes. In that case, instead use Pages CMS > Monthly Event Slideshow > Add an item and upload the included JPG, placing it after the December 7 slide and before December 19, then Save. Leave 'Keep this as the final slide' OFF.
-
-This ZIP does not publish anything automatically until you upload/commit the changes.
+PLEASE VERIFY: The Senior Adult flyer you supplied says there will be a $10 gift exchange. This differs from the earlier version of the flyer, which did not mention one. Confirm the event details before sharing.
