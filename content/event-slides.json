@@ -6,12 +6,6 @@
     "details": "We wish everyone a happy and safe Thanksgiving."
   },
   {
-    "title": "Thank You for the Thanksgiving Gift Cards",
-    "month": "November 2026",
-    "image": "/assets/event-slides/thanksgiving-gift-cards-thank-you.jpg",
-    "details": "Thank you for your generosity. Ten families were blessed."
-  },
-  {
     "title": "Grateful Threads Fundraiser Winner",
     "month": "November 2026",
     "image": "/assets/event-slides/grateful-threads-winner.jpg",
@@ -20,8 +14,14 @@
   {
     "title": "Grateful Threads Christmas Fundraiser",
     "month": "December 2026",
-    "image": "/assets/event-slides/grateful-threads-quilt-fundraiser.jpg",
-    "details": "Two quilts and holiday goodies. Drawing scheduled for Sunday, December 20."
+    "image": "/assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png",
+    "details": "Choose between two quilts, with holiday goodies also available. Grateful Threads are set up in the foyer; make a donation to support their mission."
+  },
+  {
+    "title": "Men's Fellowship Breakfast & Sunday Night Recovery Service Postponed",
+    "month": "Holiday Season 2026",
+    "image": "/assets/event-slides/mens-fellowship-recovery-postponed.jpg",
+    "details": "Both Men's Fellowship Breakfast and Sunday Night Recovery Service are postponed through the holidays. Watch for announcements about when they resume."
   },
   {
     "title": "Grateful Threads Christmas Party",
@@ -44,14 +44,14 @@
   {
     "title": "Senior Adult Christmas Dinner",
     "month": "December 2026",
-    "image": "/assets/event-slides/senior-adult-christmas-dinner.jpg",
-    "details": "Saturday, December 19 at 2:00 PM. Please bring a covered dish."
+    "image": "/assets/event-slides/senior-adult-christmas-dinner-and-signup-nov24.png",
+    "details": "Saturday, December 19, 2026 at 2:00 PM. The church provides the meat; please bring a covered dish. Seniors, use the sign-up sheet on the back table to let us know you are coming."
   },
   {
-    "title": "Men's Fellowship Breakfast & Sunday Night Recovery Service Postponed",
-    "month": "Holiday Season 2026",
-    "image": "/assets/event-slides/mens-fellowship-recovery-postponed.jpg",
-    "details": "Both Men's Fellowship Breakfast and Sunday Night Recovery Service are postponed through the holidays. Watch for announcements about when they resume."
+    "title": "Children's Christmas Program",
+    "month": "December 2026",
+    "image": "/assets/event-slides/childrens-christmas-program-dec20.png",
+    "details": "Sunday, December 20, 2026 at 10:30 AM at Valley Station Church of God. Do not miss our Children’s Christmas Program!"
   },
   {
     "title": "Tithes & Offerings: Give Online",
