@@ -1,29 +1,12 @@
-VALLEY STATION CHURCH OF GOD - REPAIR THREE BLACK SLIDES
+VALLEY STATION CHURCH OF GOD: BLACK SLIDES 3, 8 AND 9, ONE-FILE REPAIR
 
-This ZIP contains ONLY three slideshow image files, with their EXACT expected names:
-  assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png
-  assets/event-slides/senior-adult-christmas-dinner-and-signup-nov24.png
-  assets/event-slides/childrens-christmas-program-dec20.png
+This repair updates ONLY events-slideshow.js. It contains compressed copies of three December flyers directly inside that file so those slides can display even if GitHub picture paths are incorrect. Other slides remain controlled by content/event-slides.json and your 2027 theme stays at the end.
 
-It does NOT include or change your event-slides.json, index.html, CSS, JavaScript, announcements, services, Vimeo links, sermons, or the 2027 theme banner.
-The Senior Adult flyer and the separate sign-up graphic have been combined into one slide image.
+INSTALL:
+1. Back up the current events-slideshow.js from GitHub.
+2. In your church website GitHub repository main folder, select Add file > Upload files.
+3. Upload ONLY events-slideshow.js from this ZIP; do not upload the README.
+4. Commit directly to main.
+5. After Cloudflare finishes deployment, on myvscog.org press Ctrl+F5 and inspect slides 3, 8, 9.
 
-HOW TO INSTALL:
-1. Download and extract this ZIP on your computer.
-2. Open https://github.com/tjbass2655/valley-station-church-website
-3. From the repository MAIN page choose Add file -> Upload files.
-4. Drag the extracted "assets" folder into the upload area (not the ZIP itself).
-5. BEFORE COMMITTING: Confirm GitHub shows paths beginning with assets/event-slides/
-   (not assets/assets/event-slides/ or only a PNG at the root).
-6. Commit changes to the main branch.
-7. Check https://myvscog.org/#news and press Ctrl+F5 to hard refresh.
-
-TROUBLESHOOTING:
-Open each direct URL to check the picture file:
-https://myvscog.org/assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png
-https://myvscog.org/assets/event-slides/senior-adult-christmas-dinner-and-signup-nov24.png
-https://myvscog.org/assets/event-slides/childrens-christmas-program-dec20.png
-If any URL returns 404 or a black/missing image, its GitHub file is in the wrong folder or not deployed yet.
-If all three images load correctly but the slideshow is still black, try Ctrl+F5 or check the slideshow JSON for a different image path.
-
-PLEASE VERIFY: The Senior Adult flyer you supplied says there will be a $10 gift exchange. This differs from the earlier version of the flyer, which did not mention one. Confirm the event details before sharing.
+Note: The three fixed slides are bundled inside the JS. For future replacements, the image files or a new update of the JS will be needed. Other slides can still be updated normally with Pages CMS.
