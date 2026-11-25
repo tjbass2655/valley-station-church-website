@@ -1,12 +1,31 @@
-VALLEY STATION CHURCH OF GOD: BLACK SLIDES 3, 8 AND 9, ONE-FILE REPAIR
+VALLEY STATION CHURCH OF GOD - NOVEMBER 25, 2026 SLIDESHOW UPDATE
 
-This repair updates ONLY events-slideshow.js. It contains compressed copies of three December flyers directly inside that file so those slides can display even if GitHub picture paths are incorrect. Other slides remain controlled by content/event-slides.json and your 2027 theme stays at the end.
+WHAT THIS UPDATE DOES
+Adds three new December announcements, arranged by date:
+  * Sunday, Dec 6 at 11:00 AM: Kids Christmas Party in Kids Church
+  * Youth are collecting coats, toilet paper, and laundry detergent for Wayside Ministries (undated, displayed before the Dec 21 outreach)
+  * Monday, Dec 21 at 9:45 AM: Youth (13+) meet at church to serve at Wayside Ministries; Christmas party afterward
 
-INSTALL:
-1. Back up the current events-slideshow.js from GitHub.
-2. In your church website GitHub repository main folder, select Add file > Upload files.
-3. Upload ONLY events-slideshow.js from this ZIP; do not upload the README.
-4. Commit directly to main.
-5. After Cloudflare finishes deployment, on myvscog.org press Ctrl+F5 and inspect slides 3, 8, 9.
+Preserves ALL 11 slides from our most recent saved ordering, including the 3 previously black slides. The 2027 "There Is Still More!" theme stays last. The giving slide remains just before the 2027 theme.
 
-Note: The three fixed slides are bundled inside the JS. For future replacements, the image files or a new update of the JS will be needed. Other slides can still be updated normally with Pages CMS.
+INSTALLATION
+1. Open GitHub repo: https://github.com/tjbass2655/valley-station-church-website
+2. Back up these two existing files BEFORE replacing them:
+   - content/event-slides.json
+   - events-slideshow.js
+3. At repository root (where index.html is located), choose Add file > Upload files.
+4. Upload the *contents* of this ZIP after extraction. Keep the following file paths:
+   - content/event-slides.json
+   - events-slideshow.js
+   - assets/event-slides/kids-christmas-party-dec6-2026.jpg
+   - assets/event-slides/wayside-youth-donation-drive-2026.jpg
+   - assets/event-slides/wayside-youth-serving-dec21-2026.jpg
+5. Click Commit changes directly to main. Cloudflare will deploy automatically.
+6. Refresh your church website with Ctrl+F5 and use the slideshow arrows.
+
+IMPORTANT
+The new events-slideshow.js retains the three original embedded-image fixes and
+also embeds the three new images to prevent missing-picture/black-slide issues.
+It updates the slideshow ONLY. It does not change homepage, giving, sermons, or live streams.
+If you added MORE slides in Pages CMS since our last 11-slide saved version,
+compare or merge your existing content/event-slides.json first to avoid overwriting them.
