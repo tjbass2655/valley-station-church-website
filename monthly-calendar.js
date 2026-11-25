@@ -97,12 +97,38 @@
     return raw.filter(x=>x&&typeof x==='object'&&validDate(x.date)&&typeof x.title==='string'&&x.title.trim()).map(x=>({date:x.date,title:x.title.trim(),time:String(x.time||'').trim(),place:String(x.place||'').trim(),details:String(x.details||'').trim(),image:String(x.image||'').trim()})).sort((a,b)=>a.date.localeCompare(b.date));
   }
   const preview=window.VSCOG_CALENDAR_PREVIEW_EVENTS;
+  // First try the church website. If a DNS/cache/deployment issue blocks its
+  // public events file, fetch the same file from the church's public GitHub repo.
+  // Pages CMS still edits content/events.json as before.
+  const backupEventsURL = 'https://raw.githubusercontent.com/tjbass2655/valley-station-church-website/main/content/events.json';
+  async function fetchEvents(url) {
+    const response = await fetch(url, {cache:'no-store'});
+    if(!response.ok) throw Error('Unable to read events (HTTP '+response.status+')');
+    const data = await response.json();
+    if(!Array.isArray(data)) throw Error('Unexpected events format');
+    return data;
+  }
   async function load(){
     try{
-      if(Array.isArray(preview)){state.events=normalize(preview);state.error=false;}
-      else {const response=await fetch(eventsURL.href,{cache:'no-cache'});if(!response.ok)throw Error('Event list unavailable');state.events=normalize(await response.json());state.error=false;}
-    }catch(_err){state.error=true;state.events=[];}
-    state.refreshedAt=Date.now();renderAll();
+      let records;
+      if(Array.isArray(preview)) records = preview;
+      else {
+        try {
+          records = await fetchEvents(eventsURL.href);
+        } catch (primaryError) {
+          console.warn('Using public GitHub backup for church events:', primaryError);
+          records = await fetchEvents(backupEventsURL);
+        }
+      }
+      state.events=normalize(records);
+      state.error=false;
+    }catch(err){
+      console.error('Unable to load the church calendar events:', err);
+      state.error=true;
+      state.events=[];
+    }
+    state.refreshedAt=Date.now();
+    renderAll();
   }
   function controls(root,which){
     const v=which==='mini'?state.miniView:state.fullView;
