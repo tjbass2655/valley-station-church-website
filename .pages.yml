@@ -1,11 +1,10 @@
 # Free, visual editor for Valley Station Church of God.
-# Once this repository is connected at https://app.pagescms.org,
-# authorized editors can add announcements, events, and sermons.
 media:
   input: assets/uploads
   output: /assets/uploads
   rename: safe
   categories: [image]
+
 content:
   - name: announcements
     label: Weekly Announcements
@@ -32,6 +31,7 @@ content:
       - name: important
         label: Highlight this announcement
         type: boolean
+
   - name: events
     label: Upcoming Events
     type: file
@@ -61,6 +61,7 @@ content:
       - name: image
         label: Event Picture (optional)
         type: image
+
   - name: sermons
     label: Sermons and Messages
     type: file
@@ -86,7 +87,8 @@ content:
       - name: link
         label: Video or Audio Link (optional)
         type: string
-          - name: livestream
+
+  - name: livestream
     label: Watch Live (Vimeo)
     type: file
     path: content/livestream.json
@@ -104,3 +106,40 @@ content:
         label: Message for Online Viewers
         type: text
         description: Enter a welcome message for people watching online.
+
+  - name: registrations
+    label: Activity Registrations
+    type: file
+    path: content/registrations.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Activity Name
+        type: string
+        required: true
+      - name: date
+        label: Activity Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: time
+        label: Activity Time
+        type: string
+      - name: place
+        label: Location
+        type: string
+      - name: details
+        label: Activity Description
+        type: text
+      - name: image
+        label: Activity Picture (optional)
+        type: image
+      - name: signup_url
+        label: Online Registration Form Link
+        type: string
+        required: true
+      - name: active
+        label: Show Registration on Website
+        type: boolean
+        default: true
