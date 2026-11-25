@@ -6,16 +6,16 @@
     "details": "We wish everyone a happy and safe Thanksgiving."
   },
   {
-    "title": "Thank You for the Thanksgiving Gift Cards",
-    "month": "November 2026",
-    "image": "/assets/event-slides/thanksgiving-gift-cards-thank-you.jpg",
-    "details": "Thank you for your generosity. Ten families were blessed."
-  },
-  {
     "title": "Grateful Threads Fundraiser Winner",
     "month": "November 2026",
     "image": "/assets/event-slides/grateful-threads-winner.jpg",
     "details": "Congratulations to Joseph Lancaster! Thank you for supporting our ministry."
+  },
+  {
+    "title": "Grateful Threads Christmas Fundraiser",
+    "month": "December 2026",
+    "image": "/assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png",
+    "details": "Choose between two quilts, with holiday goodies also available. Grateful Threads are set up in the foyer; make a donation to support their mission."
   },
   {
     "title": "Men's Fellowship Breakfast & Sunday Night Recovery Service Postponed",
@@ -28,6 +28,12 @@
     "month": "December 2026",
     "image": "/assets/event-slides/grateful-threads-christmas-party.jpg",
     "details": "Saturday, December 5 at 2:00 PM, Fellowship Hall. Group members and special invitation only."
+  },
+  {
+    "title": "Kids Christmas Party in Kids Church",
+    "month": "December 6, 2026",
+    "image": "/assets/event-slides/kids-christmas-party-dec6-2026.jpg",
+    "details": "Kids Christmas Party in Kids Church on Sunday, December 6 at 11:00 AM."
   },
   {
     "title": "Ladies Christmas Party",
@@ -54,10 +60,16 @@
     "details": "Sunday, December 20, 2026 at 10:30 AM at Valley Station Church of God. Do not miss our Children’s Christmas Program!"
   },
   {
-    "title": "Grateful Threads Christmas Fundraiser",
-    "month": "December 2026",
-    "image": "/assets/event-slides/grateful-threads-christmas-fundraiser-updated-nov24.png",
-    "details": "Choose between two quilts, with holiday goodies also available. Grateful Threads are set up in the foyer; make a donation to support their mission."
+    "title": "Youth Collection for Wayside Ministries",
+    "month": "December 2026 | Wayside Outreach",
+    "image": "/assets/event-slides/wayside-youth-donation-drive-2026.jpg",
+    "details": "Youth are collecting new and gently used coats, toilet paper, and laundry detergent for Wayside Ministries. Please give your donations to David Hicks."
+  },
+  {
+    "title": "Youth Serving at Wayside Ministries",
+    "month": "December 21, 2026",
+    "image": "/assets/event-slides/wayside-youth-serving-dec21-2026.jpg",
+    "details": "Youth ages 13 and up will serve people experiencing homelessness at Wayside Ministries on Monday, December 21. Meet at church at 9:45 AM to load up. Christmas party afterward."
   },
   {
     "title": "Tithes & Offerings: Give Online",
