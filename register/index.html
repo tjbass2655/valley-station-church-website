@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112b40">
+  <meta name="description" content="Register online for activities and special events at Valley Station Church of God in Louisville, Kentucky.">
+  <title>Register &amp; Connect | Valley Station Church of God</title>
+  <link rel="icon" href="/assets/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/icon-192.png">
+  <style>
+    :root { --navy:#112b40; --ink:#18364c; --muted:#4a6070; --gold:#d7b474; --paper:#f5f8fa; --line:#dbe5ec; --white:#fff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; color:var(--ink); background:var(--paper); font: 16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    a:focus-visible { outline: 3px solid #ad721b; outline-offset:4px; }
+    .container { width:min(1120px,calc(100% - 36px)); margin-inline:auto; }
+    .skip { position:absolute; top:-100px; left:12px; background:#fff; padding:10px; z-index:99; }
+    .skip:focus { top:12px; }
+    .top { background:#0b2234; color:#e6edf4; padding:9px 0; font-size:13px; text-align:center; }
+    .header { background:#fff; border-bottom:1px solid var(--line); }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:17px 0; }
+    .brand { display:flex; align-items:center; gap:12px; text-decoration:none; min-width:0; }
+    .brand img { width:48px; height:54px; object-fit:contain; }
+    .brand strong { display:block; font-size:17px; font-weight:800; line-height:1.13; letter-spacing:.03em; }
+    .brand small { display:block; font-size:11px; color:var(--muted); letter-spacing:.09em; margin-top:4px; }
+    .links { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:8px 22px; font-size:14px; font-weight:650; }
+    .links a { text-decoration:none; padding:8px 0; }
+    .links a:hover { color:#9d6a27; }
+    .links a[aria-current="page"] { color:#8a5f20; text-decoration:underline; text-decoration-thickness:2px; text-underline-offset:6px; }
+    .links .give { padding:10px 16px; border-radius:9px; background:var(--navy); color:#fff; }
+    .links .give:hover { color:white; background:#234f6b; }
+    .hero { background:radial-gradient(circle at 88% 8%, #315b73 0%, transparent 48%),linear-gradient(115deg,#0e273b,#183b55); color:#fff; padding:70px 0 76px; }
+    .eyebrow { color:#e2c18a; font-size:12px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:600; }
+    h1 { font-size:clamp(38px,6vw,64px); line-height:1.09; letter-spacing:-.03em; margin:14px 0 18px; }
+    .hero p { font-size:clamp(16px,2.1vw,19px); max-width:670px; color:#e6eef5; margin-bottom:0; }
+    .section { padding:64px 0 86px; }
+    .section-head { max-width:720px; margin:0 auto 34px; text-align:center; }
+    .section-head h2 { font-size:clamp(29px,4.1vw,42px); line-height:1.13; margin-bottom:12px; }
+    .section-head p { color:var(--muted); margin-bottom:0; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,315px),1fr)); gap:22px; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:17px; overflow:hidden; box-shadow:0 10px 27px rgba(20,45,70,.055); display:flex; flex-direction:column; }
+    .card-image { width:100%; aspect-ratio:16/8.8; object-fit:cover; background:#e9eff4; display:block; }
+    .card-body { padding:27px; display:flex; flex-direction:column; flex:1; }
+    .tag { color:#956525; font-size:12px; letter-spacing:.1em; font-weight:800; text-transform:uppercase; margin-bottom:8px; }
+    .card h3 { font-family:Georgia,"Times New Roman",serif; font-size:27px; line-height:1.2; margin:0 0 13px; }
+    .meta { display:flex; flex-wrap:wrap; column-gap:15px; row-gap:4px; color:#526777; font-size:14px; font-weight:650; margin-bottom:14px; }
+    .description { white-space:pre-line; color:#465d6d; font-size:15px; margin:0 0 24px; }
+    .register-btn { display:inline-flex; align-items:center; justify-content:center; border-radius:9px; background:var(--navy); color:white; text-decoration:none; font-weight:750; min-height:46px; padding:11px 20px; margin-top:auto; }
+    .register-btn:hover { background:#265578; }
+    .status { margin:0 auto; max-width:750px; padding:34px 25px; border:1px solid var(--line); border-radius:15px; background:#fff; color:var(--muted); text-align:center; }
+    .note { margin-top:35px; padding:18px 21px; border-left:4px solid #d4ac69; color:var(--muted); background:#fff; border-radius:3px 10px 10px 3px; }
+    .note a { color:#1e567b; }
+    .footer { background:#102a3e; color:#e6edf4; padding:34px 0; }
+    .footer .container { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:18px; }
+    .footer p { margin:0; font-size:13px; }
+    .footer a { color:#fff; }
+    @media (max-width:760px) {
+      .nav { flex-direction:column; align-items:flex-start; }
+      .links { width:100%; justify-content:flex-start; gap:4px 16px; }
+      .links a { font-size:13px; }
+      .hero { padding:54px 0; }
+      .section { padding:49px 0 63px; }
+      .card-body { padding:24px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <div class="top">Valley Station Church of God | Loving God. Loving People. Investing in Our Community.</div>
+  <header class="header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="Valley Station Church of God home">
+        <img src="/assets/church-of-god-logo.png" alt="Church of God emblem">
+        <span><strong>VALLEY STATION<br>CHURCH OF GOD</strong><small>LOUISVILLE, KENTUCKY</small></span>
+      </a>
+      <nav class="links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/#news">News &amp; Events</a>
+        <a href="/#ministries">Ministries</a>
+        <a href="/register/" aria-current="page">Register &amp; Connect</a>
+        <a class="give" href="/give/">Give Online</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Get connected with your church family</div>
+        <h1>Register &amp; Connect</h1>
+        <p>We would love for you to join us! Register online for church activities, special events, and opportunities to fellowship and serve.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Activities Open for Registration</h2>
+          <p>Select an activity below to open its registration form. You can register from your phone, tablet, or computer.</p>
+        </div>
+        <div id="registration-list" class="cards" aria-live="polite" aria-busy="true"></div>
+        <p id="registration-status" class="status" role="status">Loading registrations...</p>
+        <div class="note">Questions about an activity or registration? Call the church office at <a href="tel:+15029357051">(502) 935-7051</a>.</div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container"><p>&copy; <span id="year">2026</span> Valley Station Church of God. All rights reserved.</p><p><a href="/">Return to Church Homepage</a></p></div>
+  </footer>
+  <script>
+    (function () {
+      'use strict';
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const list = document.getElementById('registration-list');
+      const status = document.getElementById('registration-status');
+
+      function safeLink(value) {
+        if (typeof value !== 'string' || !value.trim()) return null;
+        try {
+          const url = new URL(value.trim());
+          return url.protocol === 'https:' || url.protocol === 'http:' ? url.href : null;
+        } catch (_) { return null; }
+      }
+      function safeImage(value) {
+        if (typeof value !== 'string' || !value.trim()) return null;
+        const text = value.trim();
+        if (text.startsWith('/') && !text.startsWith('//')) return text;
+        return safeLink(text);
+      }
+      function prettyDate(value) {
+        if (typeof value !== 'string') return '';
+        const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+        if (!match) return value;
+        const date = new Date(Number(match[1]), Number(match[2])-1, Number(match[3]), 12);
+        if (date.getFullYear() !== Number(match[1]) || date.getMonth() !== Number(match[2])-1 || date.getDate() !== Number(match[3])) return value;
+        return date.toLocaleDateString('en-US', { month:'long', day:'numeric', year:'numeric' });
+      }
+      function el(tag, className, content) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (content !== undefined && content !== null) node.textContent = content;
+        return node;
+      }
+      function addMeta(container, content) {
+        if (content) container.appendChild(el('span', '', content));
+      }
+      function showCard(item) {
+        const card = el('article', 'card');
+        const imgSrc = safeImage(item.image);
+        if (imgSrc) {
+          const img = el('img','card-image');
+          img.src = imgSrc;
+          img.alt = item.title ? item.title + ' event image' : 'Church activity';
+          img.loading = 'lazy';
+          card.appendChild(img);
+        }
+        const body = el('div', 'card-body');
+        body.appendChild(el('span', 'tag', 'You are invited'));
+        body.appendChild(el('h3', '', item.title));
+        const meta = el('div', 'meta');
+        addMeta(meta, prettyDate(item.date));
+        addMeta(meta, item.time);
+        addMeta(meta, item.place);
+        if (meta.childNodes.length) body.appendChild(meta);
+        if (item.details) body.appendChild(el('p', 'description', item.details));
+        const button = el('a', 'register-btn', 'Register Online  ↗');
+        button.href = safeLink(item.signup_url);
+        button.target = '_blank';
+        button.rel = 'noopener noreferrer';
+        button.setAttribute('aria-label', 'Register online for ' + item.title + ' (opens in a new tab)');
+        body.appendChild(button);
+        card.appendChild(body);
+        list.appendChild(card);
+      }
+
+      fetch('/content/registrations.json', { cache: 'no-store' })
+        .then(function (response) { if (!response.ok) throw new Error('Registration file not available'); return response.json(); })
+        .then(function (data) {
+          const all = Array.isArray(data) ? data : (data && Array.isArray(data.registrations) ? data.registrations : []);
+          const active = all.filter(function(item) {
+            return item && item.active !== false && typeof item.title === 'string' && item.title.trim() && safeLink(item.signup_url);
+          }).sort(function(a,b) { return (a.date || '9999-99-99').localeCompare(b.date || '9999-99-99'); });
+          active.forEach(showCard);
+          if (active.length) { status.hidden = true; }
+          else { status.textContent = 'There are no activities open for online registration right now. Please check back soon!'; }
+        })
+        .catch(function () { status.textContent = 'Registrations are temporarily unavailable. Please call the church office for assistance.'; })
+        .finally(function () { list.setAttribute('aria-busy','false'); });
+    })();
+  </script>
+</body>
+</html>
