@@ -86,3 +86,39 @@ content:
       - name: link
         label: Video or Audio Link (optional)
         type: string
+  - name: registrations
+    label: Activity Registrations
+    type: file
+    path: content/registrations.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Activity Name
+        type: string
+        required: true
+      - name: date
+        label: Activity Date
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: time
+        label: Activity Time
+        type: string
+      - name: place
+        label: Location
+        type: string
+      - name: details
+        label: Description
+        type: text
+      - name: image
+        label: Activity Image
+        type: image
+      - name: signup_url
+        label: Online Registration Form Link
+        type: string
+        required: true
+      - name: active
+        label: Show Registration on Website
+        type: boolean
+        default: true
