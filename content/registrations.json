@@ -7,5 +7,14 @@
     "details": "Join us for Christmas fellowship, delicious food, and celebration. Please register and let us know how many are attending and what covered dish you will bring.",
     "signup_url": "https://docs.google.com/forms/d/e/1FAIpQLScCUL_nF41SfKdpASw6RdDTWpB_y45T7gIJB81MLLvHdOHflA/viewform",
     "active": true
+  },
+  {
+    "title": "\tWayside Missions Trip",
+    "date": "2026-12-21",
+    "time": "9:45 am",
+    "place": "Wayside Christian Mission",
+    "details": "\tSign up to join us on our Wayside Missions Trip.",
+    "signup_url": "\tSign up to join us on our Wayside Missions Trip.",
+    "active": true
   }
 ]
